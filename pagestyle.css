@@ -252,14 +252,50 @@ color: #42B886;}
     color: gray;
 }
 
+.adultName {
+	width: 100%;
+	font-family: 'Source Sans Pro';
+	font-size: 1.7em;
+	color: gray;
+	/*padding-left: .2em;*/
+    background-color: white;
+    border: 1px #CCCCCC solid;
+    cursor: pointer;
+    font-weight: 400;
+	padding: .5em;
+	margin-bottom: .5em;}
 
 
+button.addIncome {
+	width: 250px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #42B886;
+	border: none;
+	float: right;
+	font-size: .9em;
+	margin: 0;
+}
 
 
+.enterIncome {
+	width: 100%;
+	font-family: 'Source Sans Pro';
+	font-size: 1.7em;
+	color: gray;
+	/*padding-left: .2em;*/
+    background-color: #F9F9F9;
+    /*border: 1px #CCCCCC solid;*/
+    cursor: pointer;
+    font-weight: 400;
+	padding: .5em;
+	margin-bottom: .5em;
+
+}
 
 
-
-
+.enterIncome h4{
+	font-size: 1em;}
 
 
 
