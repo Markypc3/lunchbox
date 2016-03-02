@@ -132,6 +132,11 @@ input {
 	display: block;
 }
 
+.formspace2 {
+	height: .5em;
+	display: block;
+}
+
 
 .buttonWrapper {
 	width: 100%;
@@ -208,8 +213,8 @@ button.done2 {
 	font-size: 1.7em;
 	color: gray;
 	/*padding-left: .2em;*/
-    background-color: #CCCCCC;
-    border: 1px #CCCCCC solid;
+    background-color: #EEEEEE;
+    border: 1px #EEEEEE solid;
     cursor: pointer;
     font-weight: 400;
 }
@@ -250,6 +255,15 @@ color: #42B886;}
 .dropdown:hover .dropbtn {
     background-color: white;
     color: gray;
+}
+
+.yesFoodstamps {
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a.yesIHaveFoodStamps:focus ~ .yesFoodstamps{
+	display: block;
 }
 
 .adultName {
@@ -295,10 +309,17 @@ button.addIncome {
 
 
 .enterIncome h4{
-	font-size: 1em;}
+	font-size: 1em;
+	margin: .5em 0 .5em .1em;
+}
 
 
+.monthlyWeekly {
+	/*float: right;*/
+}
 
-
+.checkbox {
+	width: 80px;
+}
 
 
