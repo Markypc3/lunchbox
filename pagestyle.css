@@ -199,6 +199,15 @@ button.done2 {
 	border: none;
 }
 
+button.doneIncome {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #86809E;
+	border: none;
+	font-size: .9em;
+}
+
 /*///////////////////////////////////////////////DROPDOWN////////////////////////////////////////////////////////////*/
 .dropdown {
   width: 300px;
