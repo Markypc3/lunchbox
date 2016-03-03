@@ -109,12 +109,17 @@ h3 {
 	font-weight: 300;
 	color: white; /*#A6A6A6*/ 
 	padding: .5em .5em .5em .3em;
-	/*letter-spacing: 1px;*/
+	letter-spacing: .5px;
 	
 	text-align: center;
 	/*margin: .5em 0 0 .1em;*/
 	
 }
+
+span.bold {
+	font-weight: 500;
+}
+
 
 .formspace {
 	height: 2em;
