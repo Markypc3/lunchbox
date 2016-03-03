@@ -4,6 +4,18 @@
 	<meta name="viewport" content="width=device-width, initialscale=1">
        
        <link type="text/css" rel="stylesheet" href="pagestyle.css">
+       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script type="text/javascript">
+        $(function(){
+          $(".yesIHaveFoodStamps").on('click',function(){
+            if($('.yesFoodstamps').css('display') === 'none'){
+              $('.yesFoodstamps').css({"display":"block"});
+            }else{
+              $('.yesFoodstamps').css({"display":"none"});
+            }
+          });
+        });
+        </script>
 
 	<title>Lunchbox</title>
 </head>
@@ -24,6 +36,8 @@
                   </div>
                 </div>
     <span class="formspace"></span> 
+    <span class="formspace"></span> 
+    <span class="formspace"></span> 
 
     <div class="yesFoodstamps">
     <h3>Enter case #</h3>
@@ -34,12 +48,6 @@
 	<input type="text" name="signature">
 	<span class="formspace"></span> 
 
-	</div>  <!-- end of yesFoodstamps -->
-
-	</form>
-
-
-
 	<div class="buttonWrapperNarrow">
 
 	  	<!-- <button class="addMore">Add more</button>
@@ -49,6 +57,14 @@
 
 
 	  	</div> <!-- end of BUTTON wrapper -->
+
+	</div>  <!-- end of yesFoodstamps -->
+
+	</form>
+
+
+
+	
 
 
 
