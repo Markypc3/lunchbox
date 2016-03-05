@@ -70,6 +70,10 @@ table {
 	margin: 0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 h1 {
 	font-family: 'Montserrat';
 	font-size: 4em;
@@ -116,15 +120,19 @@ form {
 input {
 	width: 300px;
 	font-family: 'Source Sans Pro';
-	font-size: 1.7em;
+	font-size: 1em;
+	padding: .5em;
 	color: #cccccc;
 	padding-left: 1em;
 }
-
+input:focus {
+    outline: 2px #42B886 solid;
+}
 .longInput {
 	width: 500px;
 	font-family: 'Source Sans Pro';
-	font-size: 1.7em;
+	font-size: 1em;
+	padding: .5em;
 	color: #cccccc;
 }
 
@@ -160,7 +168,14 @@ button.register {
 }
 
 
-
+button.logIn {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #86809E;
+	border: none;
+	
+}
 
 button {
 	font-family: 'Source Sans Pro';
@@ -169,6 +184,7 @@ button {
 	color: white; 
 	margin: .5em 0 0 .1em;
 	text-transform: uppercase;
+	outline: none;
 
 }
 
@@ -314,6 +330,8 @@ button.addIncome {
     font-weight: 400;
 	padding: .5em;
 	margin-bottom: .5em;
+	position: relative;
+	display: none;
 
 }
 
@@ -333,8 +351,121 @@ button.addIncome {
 	width: 20px;
 	
 }
+/*/////////////////////////////////////////////////materialize radio button/////////////////////////////////*/
 
 
 
 
 
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden; }
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+ /* -webkit-transition: .28s ease;
+  -moz-transition: .28s ease;
+  -o-transition: .28s ease;
+  -ms-transition: .28s ease;
+  transition: .28s ease;
+  -webkit-user-select: none;*/
+  /* webkit (safari, chrome) browsers */
+ /* -moz-user-select: none;*/
+  /* mozilla browsers */
+ /* -khtml-user-select: none;*/
+  /* webkit (konqueror) browsers */
+  /*-ms-user-select: none;*/
+  /* IE10+ */ }
+
+[type="radio"] + label:before, [type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 0;/* -webkit-transition: .28s ease;
+  -moz-transition: .28s ease;
+  -o-transition: .28s ease;
+  -ms-transition: .28s ease;
+  transition: .28s ease; */
+ /**/}
+
+/* Unchecked styles */
+[type="radio"]:not(:checked) + label:before {
+  border-radius: 50%;
+  border: 2px solid #cccccc; }
+
+[type="radio"]:not(:checked) + label:after {
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  z-index: -1;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0); }
+
+/* Checked styles */
+[type="radio"]:checked + label:before {
+  border-radius: 50%;
+  border: 2px solid transparent; }
+
+[type="radio"]:checked + label:after {
+  border-radius: 50%;
+  border: 2px solid #42B886;
+  background-color: #42B886;
+  z-index: 0;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02); }
+
+/* Radio With gap */
+/*[type="radio"].with-gap:checked + label:before {
+  border-radius: 50%;
+  border: 2px solid #42B886; }
+
+[type="radio"].with-gap:checked + label:after {
+  border-radius: 50%;
+  border: 2px solid #42B886;
+  background-color: #42B886;
+  z-index: 0;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -ms-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5); }*/
+
+/* Disabled Radio With gap */
+/*[type="radio"].with-gap:disabled:checked + label:before {
+  border: 2px solid rgba(0, 0, 0, 0.26); }
+
+[type="radio"].with-gap:disabled:checked + label:after {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26); }
+*/
+/* Disabled style */
+[type="radio"]:disabled:not(:checked) + label:before, [type="radio"]:disabled:checked + label:before {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.26); }
+
+[type="radio"]:disabled + label {
+  color: rgba(0, 0, 0, 0.26); }
+
+[type="radio"]:disabled:not(:checked) + label:before {
+  border-color: rgba(0, 0, 0, 0.26); }
+
+[type="radio"]:disabled:checked + label:after {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-color: #BDBDBD; }
