@@ -129,6 +129,9 @@ span.bold {
 	color: white;
 }
 
+.yellow {
+	background-color: yellow;
+}
 
 .freeLunch2 {
 	width: 100%;
@@ -152,7 +155,7 @@ span.bold {
 
 
 .freeLunch2 span.bold {
-	font-weight: 600;
+	font-weight: 700;
 	color: gray;
 }
 

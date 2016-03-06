@@ -136,6 +136,11 @@ input:focus {
 	color: #cccccc;
 }
 
+span.lighter {
+	color: #cccccc;
+}
+
+
 .formspace {
 	height: 2em;
 	display: block;
@@ -146,6 +151,10 @@ input:focus {
 	display: block;
 }
 
+.inlineSpace {
+	width: 1em;
+	display: inline-block;
+}
 
 .buttonWrapper {
 	width: 100%;
