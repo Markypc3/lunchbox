@@ -104,26 +104,7 @@ h2 {
 }
 
 
-h4 {
-	font-family: 'Source Sans Pro';
-	font-size: 1.5em;
-	font-weight: 400;
-	color: #86809E;
-	margin: .1em 0 0 .1em;
-	padding: .5em .5em .5em .3em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 
-}
-
-ul {font-family: 'Source Sans Pro';
-	font-size: 1.1em;
-	font-weight: 400;
-	color: #86809E;
-	margin: .1em 0 0 .1em;
-	padding: .5em .5em .5em .3em;
-
-}
 
 /*///////////////////////////////////////////////PROGRESS BAR   BELOW//////////////////////////////////////////////*/
 .progressbarDiv {
@@ -357,9 +338,7 @@ button.selectSchool {
 	margin: 0;
 }
 
-a {
-	text-decoration: none;
-}
+
 /*///////////////////////////////////////////////DROPDOWN////////////////////////////////////////////////////////////*/
 .dropdown {
   width: 300px;
