@@ -7,11 +7,21 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<a href="loginscreen.html"><h1>Lunchbox</h1></a>
-	<div class="progressbar"><h2> Progress bar</h2></div>   <!-- this is going to be the bar  -->
-	
+	<div class="topBar">
+	<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="logout.html"> <button class="logOut clearfix">Log out</button></a>
+	</div>  <!-- end of topBar -->
+	<div class="progressbarDiv">
+			<div class="progressStep doneStep"><h2> Address</h2></div>
+			<div class="progressStep notDoneStep"><h2> Names</h2></div>
+			<div class="progressStep notDoneStep"><h2> School</h2></div>
+			<div class="progressStep notDoneStep"><h2> Assistance</h2></div>
+			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+
+			</div>   <!-- end of progressbarDiv  -->
+	<span class="formspace"></span> 
 	<form>
 		<h3>List all adults in your household <span class="lighter">(over 18 years old)</span> </h3>
+		<span class="formspace"></span> 
 		<input type="text" name="firstname" value="FIRST"> <input type="text" name="middlename" value="MIDDLE"> <input type="text" name="lastname" value="LAST">
 		<span class="formspace"></span> 
 		
@@ -26,7 +36,7 @@
 		<div class="buttonWrapperNarrow">
 
 	  	<button class="addMore">Add more</button>
-	  	<button class="done">Done</button>
+	  	<a href="foodstamps.html"><button class="done">Done</button></a>
 
 	  	</div> <!-- end of BUTTON wrapper -->
 

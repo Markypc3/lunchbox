@@ -8,9 +8,18 @@
 
 <body>
 <div id="wrapper"> 
-	<a href="loginscreen.html"><h1>Lunchbox</h1></a>
-	<div class="progressbar"><h2> Progress bar</h2></div>   <!-- this is going to be the bar  -->
-	
+	<div class="topBar">
+	<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="logout.html"> <button class="logOut clearfix">Log out</button></a>
+	</div>  <!-- end of topBar -->
+	<div class="progressbarDiv">
+			<div class="progressStep notDoneStep"><h2> Address</h2></div>
+			<div class="progressStep notDoneStep"><h2> Names</h2></div>
+			<div class="progressStep notDoneStep"><h2> School</h2></div>
+			<div class="progressStep notDoneStep"><h2> Assistance</h2></div>
+			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+
+			</div>   <!-- end of progressbarDiv  -->
+	<span class="formspace"></span> 
 	<form>
 	<h3>What is your address?</h3>
 	<input type="text" name="street" value="STREET" class="longInput"> <input type="text" name="apt" value="APT#">
@@ -33,7 +42,7 @@
 
   		<div class="buttonWrapper">
 
-	  	<button class="register enter">enter</button>
+	  	<a href="children.html"><button class="register enter">enter</button></a>
 
 	  	</div> <!-- end of BUTTON wrapper -->
 

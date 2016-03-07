@@ -80,6 +80,7 @@ h1 {
 	font-weight: 700;
 	color: #86809E; 
 	margin: .3em 0 .2em 0;
+	display: inline-block;
 }
 
 h2 {
@@ -102,6 +103,80 @@ h2 {
 	margin-bottom: 4em;
 }
 
+
+h4 {
+	font-family: 'Source Sans Pro';
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #86809E;
+	margin: .1em 0 0 .1em;
+	padding: .5em .5em .5em .3em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+
+ul {font-family: 'Source Sans Pro';
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #86809E;
+	margin: .1em 0 0 .1em;
+	padding: .5em .5em .5em .3em;
+
+}
+
+/*///////////////////////////////////////////////PROGRESS BAR   BELOW//////////////////////////////////////////////*/
+.progressbarDiv {
+	width: 100%;
+	/*background-color: #86809E;*/
+	margin-bottom: 4em;
+	position: relative;
+
+}
+.progressbarDiv h2 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 1em;
+}
+
+.progressStep {
+	width: 20%;
+	float: left;
+/*	padding: .5em;*/
+	height: 3.1em;
+	margin: 0;
+	/*border-top: 1px #86809E solid;
+	border-bottom: 1px #86809E solid;*/
+	border-right: 1px #86809E solid;
+
+}
+
+.doneStep {
+	background-color: #86809E;
+
+}
+
+.doneStep h2{
+	color: #CDC8DF;
+
+}
+
+
+
+.notDoneStep {
+	background-color: #CDC8DF;
+	border-right: 1px #ABA5C3 solid;
+}
+
+
+.notDoneStep:last-child {
+	border-right: none;
+}
+/*///////////////////////////////////////////////PROGRESS BAR  ABOVE//////////////////////////////////////////////*/
+
+
+
 h3 {
 	font-family: 'Source Sans Pro';
 	font-size: 1.7em;
@@ -112,6 +187,11 @@ h3 {
 
 }
 
+h3 a {
+	font-weight: 600;
+	color: #86809E; 
+}
+
 form {
 	width: 100%;
 	
@@ -119,6 +199,7 @@ form {
 
 input {
 	width: 300px;
+	height: 70px;
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	padding: .5em;
@@ -128,8 +209,23 @@ input {
 input:focus {
     outline: 2px #42B886 solid;
 }
+
+
+/*.middleInitial {
+	width: 100px;
+	height: 70px;
+	font-family: 'Source Sans Pro';
+	font-size: 1em;
+	padding: .5em;
+	color: #cccccc;
+	padding-left: 1em;
+	margin: 0 1em;
+
+}*/
+
 .longInput {
 	width: 500px;
+	height: 70px;
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	padding: .5em;
@@ -167,6 +263,17 @@ span.lighter {
 
 }
 
+button {
+	font-family: 'Source Sans Pro';
+	font-size: 1.5em;
+	font-weight: 400;
+	color: white; 
+	margin: .5em 0 0 .1em;
+	text-transform: uppercase;
+	outline: none;
+
+}
+
 button.register {
 	width: 130px;
 	height: 50px;
@@ -186,16 +293,21 @@ button.logIn {
 	
 }
 
-button {
-	font-family: 'Source Sans Pro';
-	font-size: 1.5em;
-	font-weight: 400;
-	color: white; 
-	margin: .5em 0 0 .1em;
-	text-transform: uppercase;
-	outline: none;
 
+button.logOut {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #F9F9F9;
+	border: none;
+	margin-top: 1.2em;
+	float: right;
+	color: #86809E;
+	font-size: 1em;
+	
 }
+
+
 
 
 button.addMore{
@@ -234,11 +346,26 @@ button.doneIncome {
 	font-size: .9em;
 }
 
+button.selectSchool {
+	width: 250px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #42B886;
+	border: none;
+	float: right;
+	font-size: .9em;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
 /*///////////////////////////////////////////////DROPDOWN////////////////////////////////////////////////////////////*/
 .dropdown {
   width: 300px;
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 
@@ -278,8 +405,9 @@ button.doneIncome {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: aliceblue;
-color: #42B886;}
+.dropdown-content a:hover {
+	background-color: #E5E1F4;
+	color: #42B886;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -289,7 +417,7 @@ color: #42B886;}
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: white;
-    color: gray;
+    color: #F9F9F9;
 }
 
 .yesFoodstamps {
@@ -311,8 +439,27 @@ color: #42B886;}
     border: 1px #CCCCCC solid;
     cursor: pointer;
     font-weight: 400;
-	padding: .5em;
+	padding: 1em .5em .5em .5em;
 	margin-bottom: .5em;}
+
+.childrenName {
+	width: 100%;
+	font-family: 'Source Sans Pro';
+	font-size: 1.7em;
+	color: gray;
+	/*padding-left: .2em;*/
+    background-color: white;
+    border: 1px #CCCCCC solid;
+    cursor: pointer;
+    font-weight: 400;
+	padding: 1em .5em .5em .5em;
+	margin-bottom: .5em;}
+
+
+
+.moneyTimeContainer {
+	width: 80%;
+}
 
 
 button.addIncome {
@@ -348,18 +495,33 @@ button.addIncome {
 .enterIncome h4{
 	font-size: 1em;
 	margin: .5em 0 .5em .1em;
+
 }
 
 
-.monthlyWeekly {
+.monthlyWeekly, .childFacts {
 	text-transform: uppercase;
 	font-size: .7em;
+	font-family: 'Source Sans Pro';
+	
 }
+
+
 
 .checkbox {
 	width: 20px;
 	
 }
+
+.monthlyWeekly, .childFacts label {
+	color: #CCCCCC;
+}
+
+p {
+	font-size: 1.5em;
+	color: #42B886;
+}
+
 /*/////////////////////////////////////////////////materialize radio button/////////////////////////////////*/
 
 

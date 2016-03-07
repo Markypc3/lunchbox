@@ -24,8 +24,18 @@
 
 <body>
 	<div id="wrapper"> 
-		<a href="loginscreen.html"><h1>Lunchbox</h1></a>
-		<div class="progressbar"><h2> Progress bar</h2></div>   <!-- this is going to be the bar  -->
+		<div class="topBar">
+			<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="logout.html"> <button class="logOut clearfix">Log out</button></a>
+			</div>  <!-- end of topBar -->
+		<div class="progressbarDiv">
+			<div class="progressStep doneStep"><h2> Address</h2></div>
+			<div class="progressStep doneStep"><h2> Names</h2></div>
+			<div class="progressStep doneStep"><h2> School</h2></div>
+			<div class="progressStep doneStep"><h2> Assistance</h2></div>
+			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+
+			</div>   <!-- end of progressbarDiv  -->
+	<span class="formspace"></span> 
 		
 		
 			<h3>Do any adults have income?</h3>
@@ -37,112 +47,112 @@
 				    	<div class="enterIncome"> 
 				    	<form action="#">
 						    	<!-- <span class="formspace"></span>  -->
-						    	<h4>Estimate total income</h4> 
-						    	<input type="text" name="income">
-						    	<span class="formspace2"></span> 
+						    	<!-- <div class="moneyTimeContainer"> -->
+								    	<h4>Estimate total income</h4> 
+								    	<input type="text" name="income">
+								    	<span class="formspace2"></span>  
 
-						    	<!-- <h4>Frequency</h4> 
-						    	<input type="text" name="income">
-						    	<span class="formspace"></span>  -->
-						    	<div class="monthlyWeekly">
-
-							    		<input name="weekly" type="radio" id="test1" />
-		      							<label for="test1">Weekly</label>
-		      							<span class="inlineSpace"></span>
-
-							    	 	<input name="biweekly" type="radio" id="test2" />
-		      							<label for="test2">Biweekly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="monthly" type="radio" id="test3" />
-		      							<label for="test3">monthly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="yearly" type="radio" id="test4" />
-		      							<label for="test4">yearly</label>
-		      							<span class="inlineSpace"></span>
-		      							
 								    	
-								    	</div> <!-- end of monthly weekly -->
+										    	<div class="monthlyWeekly">
 
-								    	<span class="formspace"></span> 
+											    		<input name="weekly" type="radio" id="adult1_IncomeA" />
+						      							<label for="adult1_IncomeA">Weekly</label>
+						      							<span class="inlineSpace"></span>
 
+											    	 	<input name="biweekly" type="radio" id="adult1_IncomeB" />
+						      							<label for="adult1_IncomeB">2x month</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<input name="monthly" type="radio" id="adult1_IncomeC" />
+						      							<label for="adult1_IncomeC">monthly</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<!-- <input name="yearly" type="radio" id="test4" />
+						      							<label for="test4">yearly</label>
+						      							<span class="inlineSpace"></span> -->
+						      							
+												    	
+												    	</div> <!-- end of monthly weekly -->
+										    	<!-- </div>  --> <!-- end of moneyTimeContainer -->
+
+						    	<span class="formspace"></span> 
+
+						    	<!-- <div class="moneyTimeContainer"> -->
 								    	<h4>Any public assistance, alimony or child support?</h4> 
 								    	<input type="text" name="income">
-								    	<span class="formspace"></span> 
+										<span class="formspace2"></span> 
 
+								    	
+										    	<div class="monthlyWeekly">
+
+											    		<input name="weekly" type="radio" id="adult1_AssistanceA" />
+						      							<label for="adult1_AssistanceA">Weekly</label>
+						      							<span class="inlineSpace"></span>
+
+											    	 	<input name="biweekly" type="radio" id="adult1_AssistanceB" />
+						      							<label for="adult1_AssistanceB">2x month</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<input name="monthly" type="radio" id="adult1_AssistanceC" />
+						      							<label for="adult1_AssistanceC">monthly</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<!-- <input name="yearly" type="radio" id="test4" />
+						      							<label for="test4">yearly</label>
+						      							<span class="inlineSpace"></span> -->
+						      							
+												    	
+												    	</div> <!-- end of monthly weekly -->
+												 <!-- </div> -->  <!-- end of moneyTimeContainer -->
+								 <span class="formspace"></span> 
+								 <!-- <div class="moneyTimeContainer"> -->
 								    	<h4>Any pension, retirement or other form of income?</h4> 
 								    	<input type="text" name="income">
-								    	<span class="formspace"></span> 
-								    	<button class="doneIncome">Done</button>
-								    	<span class="formspace"></span>
+								    	<span class="formspace2"></span> 
 
-						    	
-								    	</form>
+								    	
+										    	<div class="monthlyWeekly">
+
+											    		<input name="weekly" type="radio" id="adult1_OtherA" />
+						      							<label for="adult1_OtherA">Weekly</label>
+						      							<span class="inlineSpace"></span>
+
+											    	 	<input name="biweekly" type="radio" id="adult1_OtherB" />
+						      							<label for="adult1_OtherB">2x month</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<input name="monthly" type="radio" id="adult1_OtherC" />
+						      							<label for="adult1_OtherC">monthly</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<!-- <input name="yearly" type="radio" id="test4" />
+						      							<label for="test4">yearly</label>
+						      							<span class="inlineSpace"></span> -->
+						      							
+												    	
+												    	</div> <!-- end of monthly weekly -->
+												   <!-- </div> -->  <!-- end of moneyTimeContainer -->
+
+						    	<span class="formspace"></span> 
+						    	<button class="doneIncome">Done</button>
+						    	<span class="formspace"></span>
+
+
+
+				    	
+						    	</form>
 						    	
 				    	</div> <!-- end of enterIncome div -->
 				    	
 		    	<div class="adultName clearfix">Consecreteur Ahmet Ector <button class="addIncome">add income</button> </div>
-		    			<div class="enterIncome"> 
-		    			<form action="#">
-		   						 
-				    	<!-- <span class="formspace"></span>  -->
-				    	<h4>Estimate total income</h4> 
-				    				
-							    	<input type="text" name="income">
-							    	<span class="formspace2"></span> 
-							    	
-
-							    	<!-- <h4>Frequency</h4> 
-							    	<input type="text" name="income">
-							    	<span class="formspace"></span>  -->
-
-							    	<div class="monthlyWeekly">
-
-							    		<input name="weekly" type="radio" id="test1" />
-		      							<label for="test1">Weekly</label>
-		      							<span class="inlineSpace"></span>
-
-							    	 	<input name="biweekly" type="radio" id="test2" />
-		      							<label for="test2">Biweekly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="monthly" type="radio" id="test3" />
-		      							<label for="test3">monthly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="yearly" type="radio" id="test4" />
-		      							<label for="test4">yearly</label>
-		      							<span class="inlineSpace"></span>
-		      							
-								    	
-								    	</div> <!-- end of monthly weekly -->
-
-								    	<span class="formspace"></span> 
-
-								    	<h4>Any public assistance, alimony or child support?</h4> 
-								    	<input type="text" name="income">
-								    	<span class="formspace"></span> 
-
-								    	<h4>Any pension, retirement or other form of income?</h4> 
-								    	<input type="text" name="income">
-								    	<span class="formspace"></span> 
-								    	<button class="doneIncome">Done</button>
-								    	<span class="formspace"></span>
-
-								    	</form>
-								    	</div> <!-- end of enterIncome div -->
-
-
-		    			<!-- <div class="enterIncome"> </div> -->
-
+		    			
 		    </div> <!-- end of adultList -->
 			
 
 			</form>
 
 
-
+			<span class="formspace"></span>
 			<div class="buttonWrapperNarrow">
 
 			  	<!-- <button class="addMore">Add more</button>

@@ -9,31 +9,90 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<a href="loginscreen.html"><h1>Lunchbox</h1></a>
-	<div class="progressbar"><h2> Progress bar</h2></div>   <!-- this is going to be the bar  -->
-	
+	<div class="topBar">
+	<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="logout.html"> <button class="logOut clearfix">Log out</button></a>
+	</div>  <!-- end of topBar -->
+	<div class="progressbarDiv">
+			<div class="progressStep doneStep"><h2> Address</h2></div>
+			<div class="progressStep notDoneStep"><h2> Names</h2></div>
+			<div class="progressStep notDoneStep"><h2> School</h2></div>
+			<div class="progressStep notDoneStep"><h2> Assistance</h2></div>
+			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+
+			</div>   <!-- end of progressbarDiv  -->
+	<span class="formspace"></span> 
 	<form>
 	<h3>List all children in your household <span class="lighter">(infant through grade 12)</span></h3>
+	<span class="formspace"></span> 
 	<input type="text" name="firstname" value="FIRST"> <input type="text" name="middlename" value="MIDDLE"> <input type="text" name="lastname" value="LAST">
+								<span class="formspace2"></span>
+								<div class="childFacts">
+														
+														<input name="myChild1" type="radio" id="child1a" />
+						      							<label for="child1a">my child</label>
+						      							<span class="inlineSpace"></span>
+
+											    	 	<input name="fosterChild1" type="radio" id="child1b" />
+						      							<label for="child1b">foster child</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<input name="runaway1" type="radio" id="child1c" />
+						      							<label for="child1c">runaway, migrant, homeless</label>
+						      							<span class="inlineSpace"></span>
+
+						      							<!-- <input name="yearly" type="radio" id="test4" />
+						      							<label for="test4">yearly</label>
+						      							<span class="inlineSpace"></span> -->
+						      							
+												    	
+												    	</div> <!-- end of childFacts -->
 	<span class="formspace"></span> 
 	
 
 	<input type="text" name="firstname" value="FIRST"> <input type="text" name="middlename" value="MIDDLE"> <input type="text" name="lastname" value="LAST">
-	<span class="formspace"></span> 
+	<span class="formspace2"></span>
+								<div class="childFacts">
+														<input name="myChild2" type="radio" id="child2a" />
+						      							<label for="child2a">my child</label>
+						      							<span class="inlineSpace"></span>
 
-	</form>
+											    	 	<input name="fosterChild2" type="radio" id="child2b" />
+						      							<label for="child2b">foster child</label>
+						      							<span class="inlineSpace"></span>
 
-
-
+						      							<input name="runaway2" type="radio" id="child2c" />
+						      							<label for="child2c">runaway, migrant, homeless</label>
+						      							<span class="inlineSpace"></span>
+						      							<!-- <input name="yearly" type="radio" id="test4" />
+						      							<label for="test4">yearly</label>
+						      							<span class="inlineSpace"></span> -->
+						      							
+												    	
+												    	</div> <!-- end of childFacts -->
+	<span class="formspace"></span>
 	<div class="buttonWrapperNarrow">
 
-	  	<button class="addMore">Add more</button>
+	  	<button class="addMore">Add more</button> 
 
 
 	  	<button class="done">Done</button>
 
 
 	  	</div> <!-- end of BUTTON wrapper -->
+
+	<span class="formspace"></span>
+
+	
+
+
+	</form>
+
+
+
+	
+
+
+	  
 
 
 

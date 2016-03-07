@@ -76,6 +76,7 @@ h1 {
 	font-weight: 700;
 	color: #86809E; 
 	margin: .3em 0 .2em 0;
+	display: inline-block;
 }
 
 h2 {
@@ -95,6 +96,7 @@ h2 {
 	width: 100%;
 	/*height: 50px;*/
 	background-color: #86809E;
+	clear: both;
 }
 
 .indexbar2 {
@@ -122,12 +124,103 @@ h3 {
 	
 }
 
+h4 {
+	font-family: 'Source Sans Pro';
+	font-size: 3em;
+	font-weight: 600;
+	color: #86809E;
+	margin: .1em 0 0 0;
+	padding: .5em .5em .5em 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 
+}
+
+ul {font-family: 'Source Sans Pro';
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #86809E;
+	margin: .1em 0 0 .5em;
+	padding: .5em .5em .5em .3em;
+	line-height: 1.9em;
+
+}
+
+span.listTitle {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	font-style: italic;
+}
+
+li {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 1.5em;
+
+}
 
 span.bold {
 	font-weight: 600;
 	color: white;
 }
+
+.gettingStarted {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #FCF6B6;
+	padding: 2% 10% 5% 15%;
+}
+
+/*/////////////////////////////////gettingstarted 2////////////////////////////*/
+.gettingStarted2 {
+	width: 55%;
+	margin: 3em auto;
+	float: left;
+	padding: 5% 1% 5% 5%;
+}
+
+.gettingStarted2 h4 {
+	font-family: 'Source Sans Pro';
+	font-size: 3em;
+	font-weight: 600;
+	color: #86809E;
+	margin: .1em 0 0 0;
+	padding: .5em .5em .2em 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+.gettingStarted2 span.listTitle {
+	font-size: 1.6em;
+	margin-bottom: 1em;
+	font-style: italic;
+	color: #CDC8DF;
+}
+
+.gettingStarted2 ul {font-family: 'Source Sans Pro';
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #86809E;
+	margin: .5em 0 0 .5em;
+	padding: .5em .5em .5em .3em;
+	line-height: 1.7em;
+}
+
+.heroImage2 {
+	width: 40%;
+	margin: 3em auto;
+	float: left;
+}
+
+.heroImage2 img {
+	width: 100%;
+}
+
+.emptyDiv {
+	clear: both;
+}
+
+/*/////////////////////////////////END OF gettingstarted 2////////////////////////////*/
 
 .yellow {
 	background-color: yellow;
@@ -181,6 +274,10 @@ span.bold {
 	width: 100%;
 }
 
+
+
+
+
 .buttonWrapper {
 	width: 40%;
 	margin: 0 auto;
@@ -216,7 +313,18 @@ button {
 
 }
 
-
+button.logOut {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #F9F9F9;
+	border: none;
+	margin-top: 1.2em;
+	float: right;
+	color: #86809E;
+	font-size: 1em;
+	
+}
 
 @media only screen and (max-width: 609px) {
 	.heroImage {

@@ -21,17 +21,27 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<a href="loginscreen.html"><h1>Lunchbox</h1></a>
-	<div class="progressbar"><h2> Progress bar</h2></div>   <!-- this is going to be the bar  -->
-	
+	<div class="topBar">
+	<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="logout.html"> <button class="logOut clearfix">Log out</button></a>
+	</div>  <!-- end of topBar -->
+
+	<div class="progressbarDiv">
+			<div class="progressStep doneStep"><h2> Address</h2></div>
+			<div class="progressStep doneStep"><h2> Names</h2></div>
+			<div class="progressStep doneStep"><h2> School</h2></div>
+			<div class="progressStep notDoneStep"><h2> Assistance</h2></div>
+			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+
+			</div>   <!-- end of progressbarDiv  -->
+	<span class="formspace"></span> 
 	<form>
-	<h3>Do any household members have food stamps?</h3>
+	<h3>Do any household members have <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap" target="__">SNAP</a>, <a href="http://www.acf.hhs.gov/programs/ofa/programs/tanf" target="__">TANF</a> or <a href="http://www.fns.usda.gov/fdpir/food-distribution-program-indian-reservations-fdpir" target="__">FDPIR</a> (government assistance)?</h3>
 
 	<div class="dropdown">
                   <button class="dropbtn">CHOOSE</button>
                   <div class="dropdown-content">
                     <a class="yesIHaveFoodStamps">YES</a>
-                    <a href="#">NO</a>
+                    <a href="adultincome.html">NO</a>
                  
                   </div>
                 </div>
@@ -53,7 +63,7 @@
 	  	<!-- <button class="addMore">Add more</button>
  -->
 
-	  	<button class="done2">Done</button>
+	  	<a href="adultincome.html"><button class="done2">Done</button></a>
 
 
 	  	</div> <!-- end of BUTTON wrapper -->
