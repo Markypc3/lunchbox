@@ -303,6 +303,15 @@ button.logIn {
 	float: right;
 }
 
+button.status {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #86809E;
+	border: none;
+	float: right;
+}
+
 button {
 	font-family: 'Source Sans Pro';
 	font-size: 1.5em;
@@ -325,6 +334,47 @@ button.logOut {
 	font-size: 1em;
 	
 }
+
+
+.yourStatus {
+	width: 50%;
+	
+	font-family: 'Source Sans Pro';
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 2em auto;
+	padding: 1em;
+	line-height: 1.4em;
+
+}
+
+.complete {
+	background-color: #93FED1;
+	color: #86809E;
+
+}
+
+.incomplete {
+	background-color: #F9F9F9;
+	color: gray;
+}
+
+h5 {
+	font-family: 'Source Sans Pro';
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #86809E;
+	margin: .1em 0 0 0;
+	padding: .5em .5em .5em 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+
+
+
+
+
 
 @media only screen and (max-width: 609px) {
 	.heroImage {
