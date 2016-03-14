@@ -7,7 +7,7 @@
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
        <script type="text/javascript">
         $(function(){
-          $(".addIncome").on('click',function(){
+          $(".selectSchool").on('click',function(){
             if($('.enterIncome').css('display') === 'none'){
               $('.enterIncome').css({"display":"block"});
             }else{
@@ -28,11 +28,11 @@
 			<a href="loginscreen.html"><h1>Lunchbox</h1></a>  <a href="index.html"> <button class="logOut clearfix">Log out</button></a>
 			</div>  <!-- end of topBar -->
 		<div class="progressbarDiv">
-			<div class="progressStep doneStep"><h2> Address</h2></div>
-			<div class="progressStep doneStep"><h2> Names</h2></div>
-			<div class="progressStep notDoneStep"><h2> School</h2></div>
-			<div class="progressStep notDoneStep"><h2> Assistance</h2></div>
-			<div class="progressStep notDoneStep"><h2> Income</h2></div>
+			<a href="address.html"><div class="progressStep doneStep"><h2> Address</h2></div></a>
+			<a href="children.html"><div class="progressStep doneStep"><h2> Names</h2></div></a>
+			<a href="school.html"><div class="progressStep notDoneStep"><h2> School</h2></div></a>
+			<a href="foodstamps.html"><div class="progressStep notDoneStep"><h2> Assistance</h2></div></a>
+			<a href="adultincome.html"><div class="progressStep notDoneStep"><h2> Income</h2></div></a>
 
 			</div>   <!-- end of progressbarDiv  -->
 	<span class="formspace"></span> 
@@ -47,43 +47,28 @@
 				    	<div class="enterIncome"> 
 				    	<form action="#">
 						    	<!-- <span class="formspace"></span>  -->
-						    	<h4>Estimate total income</h4> 
-						    	<input type="text" name="income">
-						    	<span class="formspace2"></span> 
+						    	<h4>Select from list of schools</h4> 
+						    	<!-- <input type="text" name="income"> -->
+						    	<!-- <span class="formspace2"></span>  -->
 
-						    	<!-- <h4>Frequency</h4> 
-						    	<input type="text" name="income">
-						    	<span class="formspace"></span>  -->
-						    	<div class="monthlyWeekly">
+						    	
+						    		<ul class="listSchools">
+				                    <li>Abracadabra School</li>
+				                    <li>Build-A-Future School</li>
+				                    <li>Campfire School</li>
+				                    <li>Delancey School</li>
+				                 	</ul>
+				              
 
-							    		<input name="weekly" type="radio" id="test1" />
-		      							<label for="test1">Weekly</label>
-		      							<span class="inlineSpace"></span>
-
-							    	 	<input name="biweekly" type="radio" id="test2" />
-		      							<label for="test2">2x month</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="monthly" type="radio" id="test3" />
-		      							<label for="test3">monthly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<!-- <input name="yearly" type="radio" id="test4" />
-		      							<label for="test4">yearly</label>
-		      							<span class="inlineSpace"></span> -->
-		      							
-								    	
-								    	</div> <!-- end of monthly weekly -->
 
 								    	<span class="formspace"></span> 
 
-
+								    	</form>
 								    	
-								    	<button class="doneIncome">Done</button>
-								    	<span class="formspace"></span>
+								    	
 
 						    	
-								    	</form>
+								    	
 						    	
 				    	</div> <!-- end of enterIncome div -->
 				    	
@@ -92,54 +77,38 @@
 		    			<div class="enterIncome"> 
 		    			<form action="#">
 		   						 
-				    	<!-- <span class="formspace"></span>  -->
-				    	<h4>Estimate total income</h4> 
-				    				
-							    	<input type="text" name="income">
-							    	<span class="formspace2"></span> 
-							    	
+				    				<h4>Select from list of schools</h4> 
+						    	<!-- <input type="text" name="income"> -->
+						    	<!-- <span class="formspace2"></span>  -->
 
-							    	<!-- <h4>Frequency</h4> 
-							    	<input type="text" name="income">
-							    	<span class="formspace"></span>  -->
+						    	
+						    		<ul class="listSchools">
+				                    <li>Abracadabra School</li>
+				                    <li>Build-A-Future School</li>
+				                    <li>Campfire School</li>
+				                    <li>Delancey School</li>
+				                 	</ul>
+				              
 
-							    	<div class="monthlyWeekly">
-
-							    		<input name="weekly" type="radio" id="test1" />
-		      							<label for="test1">Weekly</label>
-		      							<span class="inlineSpace"></span>
-
-							    	 	<input name="biweekly" type="radio" id="test2" />
-		      							<label for="test2">2x month</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<input name="monthly" type="radio" id="test3" />
-		      							<label for="test3">monthly</label>
-		      							<span class="inlineSpace"></span>
-
-		      							<!-- <input name="yearly" type="radio" id="test4" />
-		      							<label for="test4">yearly</label>
-		      							<span class="inlineSpace"></span> -->
-		      							
-								    	
-								    	</div> <!-- end of monthly weekly -->
 
 								    	<span class="formspace"></span> 
 
-								    	
-								    	<button class="doneIncome">Done</button>
-								    	<span class="formspace"></span>
-
 								    	</form>
-								    	</div> <!-- end of enterIncome div -->
+								    	
+								    	
+
+						    	
+								    	
+						    	
+				    	</div> <!-- end of enterIncome div -->
 
 
-		    			<!-- <div class="enterIncome"> </div> -->
+		    		
 
 		    </div> <!-- end of adultList -->
 			
 
-			</form>
+			
 
 			<span class="formspace"></span>
 
@@ -148,7 +117,7 @@
 			  	<!-- <button class="addMore">Add more</button>
 		 -->
 
-			  	<button class="done2">Done</button>
+			  	<a href="foodstamps.html"><button class="done2">Done</button></a>
 
 
 			  	</div> <!-- end of BUTTON wrapper -->

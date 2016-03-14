@@ -349,6 +349,15 @@ button.selectSchool {
 }
 
 
+
+ul.listSchools li{
+	
+	font-size: 1em;
+	line-height: 1.5em;
+	/*color: blue;*/
+	margin-left: 2em;
+}
+
 /*///////////////////////////////////////////////DROPDOWN////////////////////////////////////////////////////////////*/
 .dropdown {
   width: 300px;
