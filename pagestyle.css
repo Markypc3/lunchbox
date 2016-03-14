@@ -160,10 +160,10 @@ h2 {
 
 h3 {
 	font-family: 'Source Sans Pro';
-	font-size: 1.7em;
+	font-size: 1.9em;  /*was 1.7*/
 /*	font-style: italic;*/
 	font-weight: 500;
-	color: #7C7A7A; 
+	color: gray; 
 	margin: .5em 0 .5em .1em;
 
 }
@@ -184,7 +184,7 @@ input {
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	padding: .5em;
-	color: #cccccc;
+	color: gray;
 	padding-left: 1em;
 }
 input:focus {
@@ -192,7 +192,7 @@ input:focus {
 }
 
 
-/*.middleInitial {
+.middleInitial {
 	width: 100px;
 	height: 70px;
 	font-family: 'Source Sans Pro';
@@ -202,7 +202,7 @@ input:focus {
 	padding-left: 1em;
 	margin: 0 1em;
 
-}*/
+}
 
 .longInput {
 	width: 500px;
@@ -217,6 +217,16 @@ span.lighter {
 	color: #cccccc;
 }
 
+
+.explanatoryText {
+	font-family: 'Source Sans Pro';
+	font-size: 1em;
+	color: #888888;
+	/*font-weight: 200;*/
+	margin: .5em 0 0 .3em;
+	line-height: 1.5em;
+	display: block;
+}
 
 .formspace {
 	height: 2em;
@@ -485,6 +495,13 @@ button.addIncome {
 	
 }
 
+.monthlyWeekly input:after, .childFacts input:after {
+	/*text-transform: uppercase;*/
+	font-size: .7em;
+	font-family: 'Source Sans Pro';
+	color: gray;
+	
+}
 
 
 .checkbox {
@@ -494,6 +511,8 @@ button.addIncome {
 
 .monthlyWeekly, .childFacts label {
 	color: #CCCCCC;
+	/*font-weight: 300;*/
+	
 }
 
 p {
