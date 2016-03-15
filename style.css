@@ -1,5 +1,5 @@
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic);
 
 
 html, body, div, span, applet, object, iframe,
@@ -300,6 +300,7 @@ button.logIn {
 	border-radius: 20px;
 	background-color: #86809E;
 	border: none;
+	outline: none;
 	float: right;
 }
 
@@ -309,6 +310,7 @@ button.status {
 	border-radius: 20px;
 	background-color: #86809E;
 	border: none;
+	outline: none;
 	float: right;
 }
 
@@ -319,6 +321,8 @@ button {
 	color: white; 
 	margin: .5em 0 0 .1em;
 	text-transform: uppercase;
+	outline: none;
+	border: none;
 
 }
 
@@ -328,6 +332,7 @@ button.logOut {
 	border-radius: 20px;
 	background-color: #F9F9F9;
 	border: none;
+	outline: none;
 	margin-top: 1.2em;
 	float: right;
 	color: #86809E;
@@ -375,7 +380,7 @@ h5 {
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	color: gray;
-	font-weight: 200;
+	font-weight: 300;
 	text-align: right;
 	margin: .5em 0 0 0;
 }

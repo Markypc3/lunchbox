@@ -1,5 +1,5 @@
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:400,300,300italic,400italic,600,700,700italic);
 
 
 html, body, div, span, applet, object, iframe,
@@ -279,6 +279,7 @@ button {
 	margin: .5em 0 0 .1em;
 	text-transform: uppercase;
 	outline: none;
+	border: none;
 
 }
 
@@ -308,6 +309,7 @@ button.logOut {
 	border-radius: 20px;
 	background-color: #F9F9F9;
 	border: none;
+	outline: none;
 	margin-top: 1.2em;
 	float: right;
 	color: #86809E;
@@ -391,74 +393,14 @@ ul.listSchools li{
 	margin-left: 2em;
 }
 
-/*///////////////////////////////////////////////DROPDOWN////////////////////////////////////////////////////////////*/
-.dropdown {
-  width: 300px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
 
-
-  .dropbtn {
-  	width: 300px;
-	font-family: 'Source Sans Pro';
-	font-size: 1.7em;
-	color: gray;
-	/*padding-left: .2em;*/
-    background-color: #EEEEEE;
-    border: 1px #EEEEEE solid;
-    cursor: pointer;
-    font-weight: 400;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    width: 300px;
-    position: absolute;
-    font-size: 1.7em;
-
-    box-sizing: border-box;
-    /*padding-left: .2em;*/
-    background-color: white;
-   
-    }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #86809E;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: 'Source Sans Pro';
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-	background-color: #E5E1F4;
-	color: #42B886;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: white;
-    color: #F9F9F9;
-}
 
 .yesFoodstamps {
 	display: none;
 	position: absolute;
 }
 
-.dropdown-content a.yesIHaveFoodStamps:focus ~ .yesFoodstamps{
-	display: block;
-}
+
 
 .adultName {
 	width: 100%;
