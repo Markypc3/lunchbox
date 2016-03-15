@@ -129,11 +129,11 @@ h2 {
 	margin: 0;
 	/*border-top: 1px #86809E solid;
 	border-bottom: 1px #86809E solid;*/
-	border-right: 1px #86809E solid;
+	/*border-right: 1px #86809E solid;*/
 
 }
 
-.doneStep {
+.doneStep, .onThisStep {
 	background-color: #86809E;
 
 }
@@ -142,8 +142,13 @@ h2 {
 	color: #CDC8DF;
 
 }
+.onThisStep h2{
+	color: #C1FEE4;   /*93FED1;*/
+}
 
-
+/*.onThisStep {
+	background-color: #9FD2C8;
+}*/
 
 .notDoneStep {
 	background-color: #CDC8DF;
@@ -173,6 +178,15 @@ h3 a {
 	color: #86809E; 
 }
 
+.forgotPassword {
+	font-family: 'Source Sans Pro';
+	font-size: 1em;
+	color: gray;
+	font-weight: 300;
+	
+	margin: .5em 0 0 .5em;
+}
+
 form {
 	width: 100%;
 	
@@ -198,7 +212,7 @@ input:focus {
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	padding: .5em;
-	color: #cccccc;
+	color: #gray;
 	padding-left: 1em;
 	margin: 0 1em;
 
@@ -210,7 +224,7 @@ input:focus {
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	padding: .5em;
-	color: #cccccc;
+	color: #gray;
 }
 
 span.lighter {
@@ -226,6 +240,9 @@ span.lighter {
 	margin: .5em 0 0 .3em;
 	line-height: 1.5em;
 	display: block;
+	background-color: #F9F9F9;
+	padding: 1em;
+	width: 80%;
 }
 
 .formspace {
@@ -310,8 +327,16 @@ button.addMore{
 	border: none;
 }
 
+button.done3 {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #42B886;
+	border: none;
+	/*float: right;*/
+}
 
-button.done {
+button.done{
 	width: 130px;
 	height: 50px;
 	border-radius: 20px;
@@ -348,6 +373,14 @@ button.selectSchool {
 	margin: 0;
 }
 
+button.submit {
+	width: 130px;
+	height: 50px;
+	border-radius: 20px;
+	background-color: #86809E;
+	outline: none;
+	border: none;
+}
 
 
 ul.listSchools li{
@@ -504,7 +537,11 @@ button.addIncome {
 	
 }
 
-.monthlyWeekly input:after, .childFacts input:after {
+.childFacts {
+	margin-left: 1.2em;
+}
+
+.monthlyWeekly input:after, .childFacts input:after, .longInput input:after {
 	/*text-transform: uppercase;*/
 	font-size: .7em;
 	font-family: 'Source Sans Pro';
@@ -546,7 +583,7 @@ p {
   padding-left: 35px;
   cursor: pointer;
   display: inline-block;
-  height: 25px;
+  height: 20px;
   line-height: 25px;
   font-size: 1rem;
  /* -webkit-transition: .28s ease;
@@ -647,3 +684,23 @@ p {
 [type="radio"]:disabled:checked + label:after {
   background-color: rgba(0, 0, 0, 0.26);
   border-color: #BDBDBD; }
+
+
+
+
+
+  @media only screen and (max-width: 1000px) {
+	.explanatoryText {
+	width: 100%;
+	}
+    
+}
+
+
+
+	@media only screen and (max-width: 665px) {
+	.progressStep {
+	width: 100%;
+	float: none;}
+    
+}
