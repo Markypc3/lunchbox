@@ -152,6 +152,18 @@ span.listTitle {
 	font-style: italic;
 }
 
+span.exitMessage {
+	display: block;
+	font-size: 1.7em;
+	color: #CDC8DF;
+	margin-bottom: 1em;
+	/*font-style: italic;*/
+	font-family: 'Source Sans Pro';
+	font-weight: 500;
+	margin: 0 auto;
+	text-align: center;
+}
+
 li {
 	list-style-type: disc;
 	list-style-position: inside;
